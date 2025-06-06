@@ -2,91 +2,181 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>I'm The Boss ($BOSS)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I’m the Boss – $BOSS Token</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background: #0d0d0d;
-      color: #fff;
       margin: 0;
-      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #0a0a0a;
+      color: #f5f5f5;
+      overflow-x: hidden;
     }
 
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
+    .boss-section {
+      padding: 2rem;
       text-align: center;
-    }
-
-    .logo {
-      width: 200px;
-      border-radius: 12px;
-      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+      position: relative;
     }
 
     h1 {
-      font-size: 2.8em;
-      color: #ffd700;
-      margin-bottom: 10px;
+      font-size: 2.2rem;
+      color: #FFD700;
+      margin-bottom: 0.5rem;
+      animation: slideInTop 1s ease-out;
     }
 
-    h2 {
-      font-size: 1.2em;
-      color: #888;
-      margin-top: 0;
+    .tagline {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #bfbfbf;
+      margin-bottom: 1.5rem;
+      animation: fadeIn 2s ease-in;
     }
 
-    p {
-      font-size: 1.1em;
+    .boss-img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,255,0,0.4);
+      animation: pulseGlow 4s infinite;
+      margin-bottom: 1.5rem;
+    }
+
+    .content {
+      font-size: 1rem;
       line-height: 1.6;
-      margin: 20px 0;
+      padding: 0 1rem;
+      max-width: 700px;
+      margin: auto;
     }
 
-    .highlights {
-      margin-top: 30px;
+    blockquote {
+      border-left: 4px solid #FFD700;
+      padding-left: 1rem;
+      font-style: italic;
+      color: #ccc;
+      margin: 1.5rem 0;
+      animation: fadeIn 2s ease-in;
+    }
+
+    ul {
+      text-align: left;
+      list-style-type: square;
+      padding-left: 2rem;
+      margin: 1.5rem 0;
+    }
+
+    ul li {
+      margin-bottom: 0.8rem;
+      font-weight: bold;
     }
 
     .highlight {
+      color: #00FF99;
       font-weight: bold;
-      font-size: 1.2em;
-      margin: 10px 0;
-      color: #00ffcc;
     }
 
-    .footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #666;
+    .final-call {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      line-height: 1.4;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    .bch-logo {
+      width: 40px;
+      position: absolute;
+      animation: floatLogo 6s infinite ease-in-out;
+      opacity: 0.2;
+    }
+
+    .logo1 { top: 10%; left: 5%; }
+    .logo2 { top: 30%; right: 10%; }
+    .logo3 { bottom: 20%; left: 15%; }
+    .logo4 { bottom: 10%; right: 5%; }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideInTop {
+      from {transform: translateY(-50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    @keyframes fadeInUp {
+      from {transform: translateY(30px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% {box-shadow: 0 0 20px rgba(0,255,0,0.4);}
+      50% {box-shadow: 0 0 40px rgba(0,255,0,0.8);}
+    }
+
+    @keyframes floatLogo {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .tagline {
+        font-size: 1rem;
+      }
+
+      .content {
+        font-size: 0.95rem;
+      }
+
+      .final-call {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="your-logo.png" alt="I'm The Boss Logo" class="logo" />
 
-    <h1>I'm The Boss</h1>
-    <h2>Token Ticker: $BOSS</h2>
+  <section class="boss-section">
+    <img src="boss-logo.png" alt="Mafia Boss Logo" class="boss-img" />
+    <h1>“I’m the Boss” – $BOSS</h1>
+    <p class="tagline">The first underworld-inspired token on Bitcoin Cash’s CashTokens DeFi.</p>
 
-    <p>
-      "I'm The Boss" ($BOSS) is more than a meme—it’s a mindset. Built on the Bitcoin Cash (BCH) blockchain, $BOSS is the token of fearless leaders, power players, and those who take charge in a world of hesitation.
-    </p>
-    <p>
-      This token isn’t about playing it safe—it’s about making moves, stacking value, and showing the world who’s in control. Whether you're trading, staking, or flexing, holding $BOSS means you don’t follow trends—you create them.
-    </p>
+    <div class="content">
+      <p>He ruled the streets with fear and finesse. Cash businesses. Silent partners. Untraceable moves. But when the Mafia boss discovered <span class="highlight">crypto on Bitcoin Cash</span>, he saw more than tech—he saw power, freedom, and the perfect tool for a modern empire.</p>
 
-    <div class="highlights">
-      <div class="highlight">🔥 Laser-focused.</div>
-      <div class="highlight">💼 Suit-ready.</div>
-      <div class="highlight">💸 Crypto-native.</div>
+      <p>Now he’s gone digital.</p>
+
+      <blockquote>“No more middlemen. No more dirty ledgers. I’m the Boss—on-chain.”</blockquote>
+
+      <p>Introducing <strong>“I’m the Boss”</strong> — the <strong>$BOSS</strong> token. Built on <strong>CashTokens</strong>, this ain’t no memecoin. It’s a <strong>statement</strong>. A badge for the real players who make moves, clean house, and stack BCH while the world sleeps.</p>
+
+      <ul>
+        <li><span class="highlight">Decentralized. Uncensorable. Untouchable.</span></li>
+        <li><span class="highlight">Made for the streets, built on-chain.</span></li>
+        <li><span class="highlight">$BOSS holders don’t follow trends—they make them.</span></li>
+      </ul>
+
+      <p class="final-call">
+        This is <span style="color: #FFD700;">DeFi with attitude</span>.<br>
+        This is <span style="color: #FFD700;">CashTokens with muscle</span>.<br>
+        This is <span style="color: #FFD700;">“I’m the Boss.”</span>
+      </p>
     </div>
 
-    <p><strong>It’s not just a coin.<br/>It’s a statement.<br/>I’m The Boss.</strong></p>
+    <!-- Bitcoin Cash animated floating logos -->
+    <img src="https://cryptologos.cc/logos/bitcoin-cash-bch-logo.png" class="bch-logo logo1" alt="BCH Logo" />
+    <img src="https://cryptologos.cc/logos/bitcoin-cash-bch-logo.png" class="bch-logo logo2" alt="BCH Logo" />
+    <img src="https://cryptologos.cc/logos/bitcoin-cash-bch-logo.png" class="bch-logo logo3" alt="BCH Logo" />
+    <img src="https://cryptologos.cc/logos/bitcoin-cash-bch-logo.png" class="bch-logo logo4" alt="BCH Logo" />
+  </section>
 
-    <div class="footer">
-      Built on BCH · Powered by the People · Born to Lead
-    </div>
-  </div>
 </body>
 </html>
